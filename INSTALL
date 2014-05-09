@@ -62,8 +62,6 @@ of `autoconf'.
 
   2. Type `make' to compile the package.
      If your lua is installed to customized locatioin, you need to set
-     LDFLAGS and CPPFLAGS as following:
-     `LDFLAGS=-L/usr/local/lua-5.2.3/lib CPPFLAGS=-I/usr/local/lua-5.2.3/include make'
 
   3. Optionally, type `make check' to run any self-tests that come with
      the package, generally using the just-built uninstalled binaries.
