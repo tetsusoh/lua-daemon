@@ -12,7 +12,7 @@ AC_PROG_CC
 AC_PROG_INSTALL
 
 missing_header=no
-AC_CHECK_HEADERS([fcntl.h string.h unistd.h lua5.1/lua.h lua5.1/lualib.h lua5.1/lauxlib.h], 
+AC_CHECK_HEADERS([fcntl.h string.h unistd.h lua.h lualib.h lauxlib.h], 
     [], 
     [missing_header=yes])
 

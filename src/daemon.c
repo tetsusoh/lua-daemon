@@ -156,6 +156,9 @@ static const luaL_Reg R[] =
 LUALIB_API int
 luaopen_daemon(lua_State *L)
 {
-    luaL_register(L, DAEMON_LIBNAME, R);
+    /*luaL_register(L, DAEMON_LIBNAME, R);*/
+    lua_newtable(L);
+    luaL_setfuncs(L, R, 0);
+    lua_setglobal(L, DAEMON_LIBNAME);
     return 1;
 }
